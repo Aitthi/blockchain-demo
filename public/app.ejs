@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Blockchain</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+ 
+    <!-- Include Editor style. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+ 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
+
+
+    <!-- Amchart -->
+     <script src="js/lib/morris-chart/raphael-min.js"></script>
+     
+
+
+	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/prism.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/pignose.init.js"></script>
+
+    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- scripit init-->
+
+    <script src="js/custom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+    <style>
+    
+        .btn-primary:focus,
+        .btn-danger:focus,
+        .btn-success:focus{
+            color: #fff;
+        }
+        .custom-modal{
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+            height: -webkit-fill-available;
+            width: 100%;
+            margin: auto;
+            background: #e2f2ffb0;
+        }
+
+
+        .card-modal{
+            width: 80%;
+            margin: auto;
+            margin-top: 15%;
+        }
+
+        .box-top-table{
+            float: right;
+            position: relative;
+        }
+        .btn-top-table:focus{
+            color: #fff;
+        }
+
+        @media (min-width: 768px){
+            .col-md-3 {
+                max-width: 24%;
+            }
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+
+<body class="fix-header fix-sidebar">
+
+    <!-- Preloader - style you can find in spinners.css -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
+        <!-- header header  -->
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                       <b>Blockchain</b>                       
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <div class="navbar-collapse">
+                    <!-- toggle and nav items -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                
+                        <!-- End Messages -->
+                    </ul>
+                    <!-- User profile and search -->
+        
+                </div>
+            </nav>
+        </div>
+        <!-- End header header -->
+        <!-- Left Sidebar  -->
+        <div class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li class="nav-label">Home</li>
+                        <li class=""> 
+                        <a href="/" >
+                            <i class="fa fa-bullhorn"></i>
+                            <span class="hide-menu">Campaign</span></a>               
+                        </li>
+                        <li class=""> 
+                        <a href="/block">
+                            <i class="fa fa-cube"></i><span class="hide-menu">Blocks</span></a>               
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </div>
+        <!-- End Left Sidebar  -->
+        <!-- Page wrapper  -->
+        
+        
+
+        <% if(url == "/"){ %>
+            <%-include('campaign.ejs');%>
+            <%}else if(url == "/block"){%>
+            <%-include('blocks.ejs');%>
+            <%}%>
+
+        <!-- End Page wrapper  -->
+    </div>
+
+
+    <div class="custom-modal" id="popup" style="display: none;">
+        <div class="card card-modal animated bounceIn">
+          <div class="card-title">
+            <h4>
+                Start a campaign
+            </h4>
+            <div class="box-top-table">
+
+              <button class="btn btn-danger btn-top-table" onclick="popup(false);">Cancel</button>
+              &nbsp;
+              <button class="btn btn-primary btn-top-table" onclick="CreateBlock()" >Create</button>
+
+            </div>
+          </div>
+          <div class="card-body">
+            <form>
+            
+                <div class="form-group">
+                    <p class="text-muted m-b-15 f-s-12">Campaign</p>
+                    <input id="Campaign" type="text" class="form-control input-default " placeholder="Name...">
+                </div>
+            
+                <div class="form-group">
+                    <p class="text-muted m-b-15 f-s-12">Description</p>
+                    <textarea id="desText"></textarea>
+                </div>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+<script>
+
+        
+        window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '1821260964868901',
+                cookie     : true,
+                xfbml      : true,
+                version    : '2.8'
+              });
+                
+                
+            };
+          
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "https://connect.facebook.net/en_US/all.js";
+               fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</body>
+
+</html>

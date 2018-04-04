@@ -1,0 +1,67 @@
+<div class="page-wrapper">
+    <!-- Bread crumb -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-primary">Blocks</h3>
+        </div>
+    </div>
+    <!-- End Bread crumb -->
+    <!-- Container fluid  -->
+    <div class="container-fluid">
+
+
+        <div class="row" id="list_block">
+
+
+
+        </div>
+
+
+        <!-- End PAge Content -->
+    </div>
+    <!-- footer -->
+
+    <!-- End footer -->
+</div>
+
+<script>
+
+    function listBlocks(){
+        axios.get('/blocks').then(res=>{
+            console.log(res)
+            $('#list_block').html('')
+            var data = res.data
+
+            data.map((item, i)=>{
+                var text = `
+            <div class="col-md-3">
+                <div class="card">
+                    <ul>
+                        <li>
+                            <b>Index</b> : ${item.index}
+                        </li>
+                        <li>
+                            <b>Timestamp</b> : ${item.timestamp}
+                        </li>
+                        <li>
+                            <b>Previous Hash</b> : ${item.previousHash}
+                        </li>
+                        <li>
+                            <b>Hash</b> :  ${item.hash}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            ${data.length == i+1? '': '<i class="fa fa-arrow-right" style="margin-top: 90px;"> </i>'}
+            
+            `
+                $('#list_block').append(text)
+            })
+
+        })
+    }
+
+    listBlocks()
+
+
+</script>
